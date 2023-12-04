@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="image/favicon.ico" />
+    <!--type fala para o broser que vamos usar o estilo css-->
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Calculadora Freelance</title>
+  </head>
+  <body>
+    <nav class="barra-navegacao">
+      <img class="barra-navegacao_logotipo" src="image/favicon-16x16.png" />
+    </nav>
+    <header>
+      <h1 class="cabecalho_titulo">Calculadora naslita</h1>
+    </header>
+    <main>
+        <section class="imagens">
+              <img src="img/pilhas_moedas.png" alt="">
+              <img src="img/dinheiro_moedas.png" alt="">
+              <img src="img/notas_euro1.png" alt="">
+              <img src="img/notas_euro2.png" alt="">
+              <img src="img/pilha_euro.png" alt="">
+              <img src="img/saco_dinheiro.png" alt="">
+        </section>
+     
+      <section>
+        <article>
+          <fieldset>
+            <legend>Quanto você ganha por mês?</legend>
+            <div>
+              <label>Quantidade por mês $</label>
+              <input id="mes" type="number" value="0" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Quantas horas você trabalha por dia?</legend>
+            <div>
+              <label for="horas">Horas por dia</label>
+              <input id="horas" type="number" value="0" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Quantos dias vocês trabalha por mês?</legend>
+            <div>
+              <label for="dias">Dias por mês</label>
+              <input id="dias" type="number" value="0" />
+            </div>
+          </fieldset>
+          <button onclick="calcular()">Calcular</button>
+        </article>
+      </section>
+      <footer>
+        <h3><span id="resposta">R$ 0,00</span><small>/hora</small></h3>
+      </footer>
+    </main>
+    <footer class="rodape">Feito com muito perrengue</footer>
+    <script type="text/javascript" src="calculo.js"></script>
+  </body>
+</html>
